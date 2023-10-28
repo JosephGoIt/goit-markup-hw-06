@@ -39,15 +39,31 @@
                     </button>
                     <h4>Leave your contacts and we will call you back</h4>
                     <form class="contact-form">
-                        <div class="contact-form-content">
-                            <label for="name">Name</label>
-                            <div class="input-container">
-                                <svg class="input-container-icon">
+                            <label for="name" class="contact-label">
+                                <span class="input-label">Name</span>
+                                <input type="text" placeholder="Name" class="input-value" name="name">
+                                <svg class="input-icon">
                                     <use xlink:href="./images/icons.svg#person"></use>
                                 </svg>
-                                <input type="text" placeholder="Name" class="input-value name">
-                            </div>
-                        </div>
+                            </label>
+                            <label for="phone" class="contact-label">
+                                <span class="input-label">Phone</span>
+                                <input type="text" placeholder="Phone" class="input-value" name="phone">
+                                <svg class="input-icon">
+                                    <use xlink:href="./images/icons.svg#phone"></use>
+                                </svg>
+                            </label>
+                            <label for="email" class="contact-label">
+                                <span class="input-label">Email</span>
+                                <input type="text" placeholder="Email" class="input-value" name="email">
+                                <svg class="input-icon">
+                                    <use xlink:href="./images/icons.svg#email"></use>
+                                </svg>
+                            </label>
+                            <label for="comment" class="contact-label">
+                                <span class="input-label">Comment</span>
+                                <textarea class="input-textarea" name="comment" rows="5" placeholder="Text input"></textarea>
+                            </label>
                     </form>
                 </div>
             </div>
@@ -258,12 +274,12 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-text>">
+        <div class="footer-text">
             <a href="webstudio" class="logo" id="logo-footer"><span>WEB</span>STUDIO</a>
-            <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            <p class="footer-p">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
-        <div class="footer-socialmedia">
-            <p>Social media</p>
+        <div class="footer-text">
+            <p class="footer-p">Social media</p>
             <div class="social-media">
                 <a class="icon-container">
                     <svg class="icon">
@@ -286,6 +302,13 @@
                     </svg>
                 </a>
             </div>
+        </div>
+        <div class="footer-text">
+            <p class="footer-p">Subscribe</p>
+            <form class="subscribe-cont">
+                <input type="text" class="subs-email" placeholder="E-mail">
+                <button type="button" class="sub-btn">Subscribe</button>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
